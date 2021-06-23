@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="system" method="upgrade">
+	<name>S7D Cookies</name>
+	<author>Joomla! Project</author>
+	<creationDate>December 2007</creationDate>
+	<copyright>Copyright (C) 2005 - 2020 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>3.0.0</version>
+	<description>Adiciona uma caixa com opção de aceitar.</description>
+	<files>
+		<filename plugin="s7dcookies">s7dcookies.php</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="text"
+					type="textarea"
+					label="Descrição"
+					filter="safeHtml"
+				/>
+			</fieldset>
+			<fieldset name="btnOk" label="Btn Accept">
+				<field 
+					name="btnText" 
+					type="text" 
+					default="Aceitar" 
+					label="Btn Text"
+				/>
+				<field 
+					name="btnBackColor" 
+					type="color" 
+					default="#000" 
+					format="rgba"
+					label="Btn Background Color"
+				/>
+				<field 
+					name="btnTextColor" 
+					type="color" 
+					default="#fff" 
+					format="rgba"
+					label="Btn Text Color"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
