@@ -11,7 +11,9 @@
 	<description>Adiciona uma caixa com opção de aceitar.</description>
 	<files>
 		<filename plugin="s7dcookies">s7dcookies.php</filename>
+		<folder plugin="s7dcookies">css</folder>
 	</files>
+
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
@@ -19,6 +21,7 @@
 					name="text"
 					type="textarea"
 					label="Descrição"
+					default="Utilizamos cookies para oferecer melhor experiência, melhorar o desempenho, analisar como você interage em nosso site e personalizar conteúdo."
 					filter="safeHtml"
 				/>
 			</fieldset>
